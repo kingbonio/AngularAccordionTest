@@ -1,0 +1,62 @@
+[
+  {
+    "id": "team_a",
+    "name": "Team A",
+    "parentId": null
+  },
+  {
+    "id": "team_b",
+    "name": "Team B",
+    "parentId": null
+  },
+  {
+    "id": "team_c",
+    "name": "Team C",
+    "parentId": null
+  },
+  {
+    "id": "team_a1",
+    "name": "Team A1",
+    "parentId": "team_a"
+  },
+  {
+    "id": "team_a1.1",
+    "name": "Team A1.1",
+    "parentId": "team_a1"
+  },
+  {
+    "id": "team_a1.2",
+    "name": "Team A1.2",
+    "parentId": "team_a1"
+  },
+  {
+    "id": "team_a2",
+    "name": "Team A2",
+    "parentId": "team_a"
+  },
+  {
+    "id": "team_b1",
+    "name": "Team B1",
+    "parentId": "team_b"
+  },
+  {
+    "id": "team_c1",
+    "name": "Team C1",
+    "parentId": "team_c"
+  },
+  {
+    "id": "team_c2",
+    "name": "Team C2",
+    "parentId": "team_c"
+  },
+  {
+    "id": "team_c2.1",
+    "name": "Team C2.1",
+    "parentId": "team_c2"
+  },
+  {
+    "id": "team_c2.2",
+    "name": "Team C2.2",
+    "parentId": "team_c2"
+  }
+]

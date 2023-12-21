@@ -1,0 +1,21 @@
+<div *ngIf="formattedTeamsData" class="accordion">
+    <div (click)="onClick($event)" class="teams-header">
+        <div [ngSwitch]="subTeamSection" class="teams-title">
+            <div *ngSwitchCase="false">
+                Teams
+            </div>
+            <div *ngSwitchCase="true">
+                Sub Teams
+            </div>
+        </div>
+        <div [ngClass]="collapsed ? 'more' : 'less'" class="arrow"></div>
+    </div>
+    <div [ngClass]="collapsed ? 'collapsed' : ''">
+        <div *ngFor="let team of formattedTeamsData" class="teams-item">
+            <div class="teams-name">{{ team?.name }}</div>
+            <div *ngIf="team?.subTeams?.length">
+                <app-accordion [data]="team.subTeams" [subTeamSection]="true"></app-accordion>
+            </div>
+        </div>
+    </div>
+</div>
